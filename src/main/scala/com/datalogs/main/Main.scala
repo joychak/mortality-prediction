@@ -2,15 +2,15 @@
  * @author Joy Chakraborty <joychak1@gatech.edu>.
  */
 
-package edu.gatech.cse8803.main
+package com.datalogs.main
 
 import java.io.File
 
-import edu.gatech.cse8803.classification.{metrics, models}
-import edu.gatech.cse8803.datamodel.{Chart, IcuStays, Patient}
-import edu.gatech.cse8803.features.FeatureConstruction.MortalityType
-import edu.gatech.cse8803.features.{FeatureConstruction, FeatureUtils}
-import edu.gatech.cse8803.ioutils.LoadData
+import com.datalogs.classification.{metrics, models}
+import com.datalogs.datamodel.{Chart, IcuStays, Patient}
+import com.datalogs.features.FeatureConstruction.MortalityType
+import com.datalogs.features.{FeatureConstruction, FeatureUtils}
+import com.datalogs.ioutils.LoadData
 import org.apache.commons.io.FileUtils
 import org.apache.spark.rdd.RDD
 import org.apache.spark.{SparkConf, SparkContext}

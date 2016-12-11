@@ -2,11 +2,11 @@
   * @author Joy Chakraborty <joychak1@gatech.edu>.
   */
 
-package edu.gatech.cse8803.classification
+package com.datalogs.classification
 
-import org.apache.spark.ml.{Pipeline}
-import org.apache.spark.ml.classification.{LogisticRegression}
-import org.apache.spark.ml.evaluation.{BinaryClassificationEvaluator}
+import org.apache.spark.ml.Pipeline
+import org.apache.spark.ml.classification.LogisticRegression
+import org.apache.spark.ml.evaluation.BinaryClassificationEvaluator
 import org.apache.spark.ml.feature.{IndexToString, StringIndexer, VectorIndexer, Normalizer => MLNormalizer, StandardScaler => MLStandardScaler}
 import org.apache.spark.mllib.classification.{LogisticRegressionWithLBFGS, SVMWithSGD}
 import org.apache.spark.mllib.feature.{Normalizer, StandardScaler}

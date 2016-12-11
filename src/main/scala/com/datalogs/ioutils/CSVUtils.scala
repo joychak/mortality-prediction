@@ -2,7 +2,7 @@
   * @author Joy Chakraborty <joychak1@gatech.edu>.
   */
 
-package edu.gatech.cse8803.ioutils
+package com.datalogs.ioutils
 
 import java.io.File
 

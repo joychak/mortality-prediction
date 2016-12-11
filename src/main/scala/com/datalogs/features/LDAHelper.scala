@@ -2,11 +2,11 @@
   * @author Joy Chakraborty <joychak1@gatech.edu>.
   */
 
-package edu.gatech.cse8803.features
+package com.datalogs.features
 
 import java.sql.Date
 
-import edu.gatech.cse8803.datamodel.Note
+import com.datalogs.datamodel.Note
 import org.apache.spark.ml.Pipeline
 import org.apache.spark.ml.feature.{CountVectorizer, CountVectorizerModel, RegexTokenizer, StopWordsRemover}
 import org.apache.spark.ml.linalg.{Vector => MLVector}

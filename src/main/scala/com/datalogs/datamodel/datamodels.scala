@@ -2,7 +2,7 @@
   * @author Joy Chakraborty <joychak1@gatech.edu>.
   */
 
-package edu.gatech.cse8803.datamodel
+package com.datalogs.datamodel
 
 import java.sql.Date
 

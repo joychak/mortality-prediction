@@ -2,7 +2,7 @@
   * @author Joy Chakraborty <joychak1@gatech.edu>.
   */
 
-package edu.gatech.cse8803.classification
+package com.datalogs.classification
 
 import org.apache.spark.mllib.evaluation.{BinaryClassificationMetrics}
 import org.apache.spark.rdd.RDD

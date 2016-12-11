@@ -2,12 +2,12 @@
   * @author Joy Chakraborty <joychak1@gatech.edu>.
   */
 
-package edu.gatech.cse8803.features
+package com.datalogs.features
 
 import java.io.File
 
-import edu.gatech.cse8803.datamodel._
-import edu.gatech.cse8803.features.FeatureConstruction.FeatureTuple
+import com.datalogs.datamodel._
+import com.datalogs.features.FeatureConstruction.FeatureTuple
 import org.apache.commons.io.FileUtils
 import org.apache.spark.SparkContext
 import org.apache.spark.mllib.linalg.Vectors

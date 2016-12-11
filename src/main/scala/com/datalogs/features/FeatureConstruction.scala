@@ -2,11 +2,11 @@
   * @author Joy Chakraborty <joychak1@gatech.edu>.
   */
 
-package edu.gatech.cse8803.features
+package com.datalogs.features
 
 import java.sql.Date
 
-import edu.gatech.cse8803.datamodel._
+import com.datalogs.datamodel._
 import org.apache.spark.SparkContext
 import org.apache.spark.mllib.regression.LabeledPoint
 import org.apache.spark.mllib.clustering.{DistributedLDAModel, EMLDAOptimizer, LDA}

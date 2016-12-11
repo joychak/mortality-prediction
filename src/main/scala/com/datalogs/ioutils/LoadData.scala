@@ -2,12 +2,12 @@
   * @author Joy Chakraborty <joychak1@gatech.edu>.
   */
 
-package edu.gatech.cse8803.ioutils
+package com.datalogs.ioutils
 
 import java.sql.Date
 import java.text.SimpleDateFormat
 
-import edu.gatech.cse8803.datamodel._
+import com.datalogs.datamodel._
 import org.apache.spark.sql.{Dataset, SparkSession}
 
 /**
