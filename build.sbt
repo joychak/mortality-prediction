@@ -1,4 +1,4 @@
-name := "cse8803_project"
+name := "mortality_prediction"
 version := "1.0"
 scalaVersion := "2.11.8"
 

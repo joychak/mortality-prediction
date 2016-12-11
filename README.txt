@@ -10,13 +10,13 @@ Step-1: Compile the source code and create the fat .jar by running the following
     a. command => cd [sourcecode]     #changing the directory to the source-code root location
     b. command => sbt assembly        #Create the jar
 
-    The cse8803_project-assembly-1.0.jar will be created at [sourcecode]/target/scala-2.11/cse8803_project-assembly-1.0.jar
+    The mortality_prediction-assembly-1.0.jar will be created at [sourcecode]/target/scala-2.11/mortality_prediction-assembly-1.0.jar
 
 Step-2: Run the following command -
 
     spark-submit --driver-memory 4G --executor-memory 4G \
     --master local \
-    --class edu.gatech.cse8803.main.Main [sourcecode]/target/scala-2.11/cse8803_project-assembly-1.0.jar \
+    --class com.datalogs.main.Main [sourcecode]/target/scala-2.11/mortality_prediction-assembly-1.0.jar \
     --csv-dir "[MIMIC-input-file-location]" \
     --feature-dir "To-be-created-feature-location" \
     --output-dir "Output-location" \
@@ -124,7 +124,7 @@ Detailed ICU Mortality Prediction Setup Instructions
     8.1. command => cd [sourcecode]     #changing the directory to the source-code root location
     8.2. command => sbt assembly        #Create the jar
 
-    The cse8803_project-assembly-1.0.jar will be created at [sourcecode]/target/scala-2.11/cse8803_project-assembly-1.0.jar
+    The mortality_prediction-assembly-1.0.jar will be created at [sourcecode]/target/scala-2.11/mortality_prediction-assembly-1.0.jar
 
 9.  Setting up the computation environment for running the program -
 
@@ -137,7 +137,7 @@ Detailed ICU Mortality Prediction Setup Instructions
     spark-submit --driver-memory 8G --executor-memory 8G \
     --master yarn \
     --num-executors 84
-    --class edu.gatech.cse8803.main.Main [sourcecode]/target/scala-2.11/cse8803_project-assembly-1.0.jar \
+    --class com.datalogs.main.Main [sourcecode]/target/scala-2.11/mortality_prediction-assembly-1.0.jar \
     --csv-dir "[input-mimic-csv-files-location]" \
     --feature-dir "[program-output-feature-files-location]" \
     --test-feature-dir "[program-output-feature-files-location-for-test-datasets] \
@@ -150,7 +150,7 @@ Detailed ICU Mortality Prediction Setup Instructions
     spark-submit --driver-memory 8G --executor-memory 8G \
     --master local \
     --num-executors 84 \
-    --class edu.gatech.cse8803.main.Main [sourcecode]/target/scala-2.11/cse8803_project-assembly-1.0.jar \
+    --class com.datalogs.main.Main [sourcecode]/target/scala-2.11/mortality_prediction-assembly-1.0.jar \
     --csv-dir "[input-mimic-csv-files-location]" \
     --feature-dir "[program-output-feature-files-location]" \
     --test-feature-dir "[program-output-feature-files-location-for-test-datasets] \
@@ -198,7 +198,7 @@ Detailed ICU Mortality Prediction Setup Instructions
 
     3.   "--num-executors" is optional and depends on cluster size and number of computational cores available. Find details at http://spark.apache.org/docs/latest/configuration.html.
 
-    4.   "--class" is required to specify the fully-qualified-name of the "main" method in JAR and the location of the cse8803_project-assembly-1.0.jar file.
+    4.   "--class" is required to specify the fully-qualified-name of the "main" method in JAR and the location of the mortality_prediction-assembly-1.0.jar file.
 
     5.   "--csv-dir" is required to specify the location of MIMIC and other input files as required by this program.
             e.g. --csv-dir "[sourcecode]/MIMIC/input" (please don't put "/" at the end)
