@@ -174,7 +174,7 @@ Detailed ICU Mortality Prediction Setup Instructions
 
         2. For LR (Option-2 described above) -
            e.g. echo 'SUBJECT_ID,InHospital_Expiry' > [sourcecode]/output/svlight_inICU12Hr_baseline.csv	#This creates the cvs header required for Kaggle submission
-                cat [sourcecode]/output/svlight_inICU12Hr_baseline/part* > [sourcecode]/output/svlight_inICU12Hr_baseline.csv
+                cat [sourcecode]/output/svlight_inICU12Hr_baseline/part* >> [sourcecode]/output/svlight_inICU12Hr_baseline.csv
 
     The program runs for the following models in 3 different outcomes -
     -- InICU12Hr, InICU24Hr, InICU48Hr, InICURetro     => For In-hospital or ICU mortality
@@ -232,3 +232,5 @@ Detailed ICU Mortality Prediction Setup Instructions
          --pipeline-stage 2 => To run the SVMWithSGD using the features constructed and stored at "feature-dir". This option assumes that the program was run before using "--pipeline-stage 1" to create the features.
 
          --pipeline-stage 3 => To run the LogisticRegressionWithLBFGS using the training-set features constructed and stored at "feature-dir" and test patients feature constructed and stored at "test-feature-dir". This option assumes that the program was run before using "--pipeline-stage 1" to create the features for training-set and test-set inputs.
+
+    Presentation Link: https://www.youtube.com/watch?v=xRF_mo9GjBs

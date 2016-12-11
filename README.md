@@ -242,3 +242,5 @@ Detailed ICU Mortality Prediction Setup Instructions
              --pipeline-stage 1 => For constructing features only for different models depending on other parameters. If "--test-feature-dir" is specified then the program expects "icu_mortality_test_patients.csv" file at "--csv-dir" and features will be created separately for training (at "feature-dir") and testing (at "test-feature-dir") set, sotherwise the features for entire input dataset set will be created at "feature-dir".
              --pipeline-stage 2 => To run the SVMWithSGD using the features constructed and stored at "feature-dir". This option assumes that the program was run before using "--pipeline-stage 1"  to create the features.
              --pipeline-stage 3 => To run the LogisticRegressionWithLBFGS using the training-set features constructed and stored at "feature-dir" and test patients feature constructed and stored at "test-feature-dir". This option assumes that the program was run before using "--pipeline-stage 1" to create the features for training-set and test-set inputs.
+
+**Presentation Link**: https://www.youtube.com/watch?v=xRF_mo9GjBs
